@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="52.254" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="login page" name="login page title test" time="2.851">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+Then title should contain "UiBank"..........................................passed
+When close site.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login page" name="login page fields test" time="2.029">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+Then page should be contain required fileds.................................passed
+When close site.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="login page positive test - Example #1.1" time="7.533">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+And fill fields with "gcreddy1997@gmail.com" and "Madhavi@1206".............passed
+And click on sign in and agree to private policy............................passed
+Then "Welcome!" msg should be displayed in account page.....................passed
+Then title should contain "UiBank"..........................................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="login page positive test - Example #1.2" time="7.483">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+And fill fields with "chris" and "Test123"..................................passed
+And click on sign in and agree to private policy............................passed
+Then "Welcome!" msg should be displayed in account page.....................passed
+Then title should contain "UiBank"..........................................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="Data table data along with examples data - Example #1.1" time="7.508">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+And do successful login by giving valid data in "chrome"....................passed
+And click on sign in and agree to private policy............................passed
+Then "Welcome!" msg should be displayed in account page.....................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="Data table data along with examples data - Example #1.2" time="11.519">
+<system-out><![CDATA[
+Given open "firefox" browser................................................passed
+When launch site............................................................passed
+And do successful login by giving valid data in "firefox"...................passed
+And click on sign in and agree to private policy............................passed
+Then "Welcome!" msg should be displayed in account page.....................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="Data table data along with examples data - Example #1.3" time="9.613">
+<system-out><![CDATA[
+Given open "edge" browser...................................................passed
+When launch site............................................................passed
+And do successful login by giving valid data in "edge"......................passed
+And click on sign in and agree to private policy............................passed
+Then "Welcome!" msg should be displayed in account page.....................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="login for old user" name="" time="3.401">
+<system-out><![CDATA[
+Given open "chrome" browser.................................................passed
+When launch site............................................................passed
+And login by taking test data from excel file...............................passed
+And close site..............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
